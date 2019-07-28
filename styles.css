@@ -12,15 +12,11 @@ section{
 fieldset{
     border: none;
 }
-
-
-
 #header{
     display: flex;
     flex-direction: row;
     width: 100vw;
     justify-content: center;
-
 }
 #header-title{
     display: flex;
@@ -60,6 +56,4 @@ fieldset{
 .nav-link{
     margin-right: 20px;
     text-decoration: none;
-   
 }
-
