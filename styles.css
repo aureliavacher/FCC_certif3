@@ -1,35 +1,59 @@
 body, html{
-    background-color: #b0bec5;
+    background-color: #eceff1;
     color: black;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#survey-form{
-    border: 2px solid #9ea7aa;
-    background-color: #eceff1;
-    border-radius: 5px;
-    margin: 30px;
-    padding: 30px;
+section{
+    margin: 40px;
 }
 fieldset{
     border: none;
 }
-.column1{
-    display: inline-block;
-    text-align: right;
-    width: 45%;
-    vertical-align: start;
-    margin-right: 10px;
+#header{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
 }
-.column2{
-    display: inline-block;
-    text-align: left;
+#header-title{
+    display: flex;
+    flex-direction: row;
     width: 40%;
-    vertical-align: middle;
-    margin-left: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
 }
-#submit{
+#header-img{
+    width: 40px;
     margin: 20px;
+}
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    background-color: #eceff1;
+}
+@media screen and (max-width: 900px) {
+    #nav-bar{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+#form{
+    border: 2px solid #9ea7aa;
+    background-color: #eceff1;
+    border-radius: 5px;
+    padding: 30px;
+}
+.nav-link{
+    margin-right: 20px;
+    text-decoration: none;
 }
